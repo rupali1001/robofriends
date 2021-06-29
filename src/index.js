@@ -1,14 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./Containers/App";
+import reportWebVitals from "./reportWebVitals";
+import "tachyons";
+// import Card from "./Card";
+import { robots } from "./Robots"; //We need destructure which are not default exported
+// import CardList from "./CardList";
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </div>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
